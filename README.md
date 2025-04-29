@@ -1,6 +1,6 @@
 # Visão Geral do Modelo
 
-Este é um modelo CNN simples para classificação de áudio baseado nos espectrogramas Mel gerados pelo script de preprocessamento.py, o modelo foi projetado para classificar áudios em três classes: background, edjo e sao_mag_cenas.
+Este é um modelo CNN simples para classificação de áudio baseado nos espectrogramas Mel gerados pelo script de preprocessamento.py, o modelo foi projectado para classificar áudios em três classes: background, edjo e sao_mag_cenas.
 
 ## Características Principais do Modelo:
 
@@ -15,7 +15,7 @@ Este é um modelo CNN simples para classificação de áudio baseado nos espectr
    * Técnicas de aumento de dados podem ser adicionadas se necessário
 
 3. **Processo de Treinamento**:
-   * Utiliza otimizador Adam e função de perda cross-entropy
+   * Utiliza optimizador Adam e função de perda cross-entropy
    * Implementa early_stop salvando o melhor modelo
    * Inclui visualização de curvas de aprendizado
 

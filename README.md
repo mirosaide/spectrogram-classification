@@ -5,7 +5,7 @@ Este é um modelo CNN simples para classificação de áudio baseado nos espectr
 ## Características Principais do Modelo:
 
 1. **Arquitetura**:
-   * 3 camadas convolucionais com normalização em lote e max pooling
+   * 3 camadas convolucionais com normalização em batch e max pooling
    * Camadas totalmente conectadas com dropout para regularização
    * Tratamento adaptativo do tamanho de entrada para diferentes dimensões de espectrogramas
 
@@ -16,7 +16,7 @@ Este é um modelo CNN simples para classificação de áudio baseado nos espectr
 
 3. **Processo de Treinamento**:
    * Utiliza otimizador Adam e função de perda cross-entropy
-   * Implementa parada antecipada salvando o melhor modelo
+   * Implementa early_stop salvando o melhor modelo
    * Inclui visualização de curvas de aprendizado
 
 4. **Avaliação**:
@@ -39,7 +39,7 @@ Este é um modelo CNN simples para classificação de áudio baseado nos espectr
     └── [arquivos de espectrograma com sufixo _melspec.npy]
 ```
 
-3. Modifique o parâmetro `base_folder` na função `main()` para apontar para o seu diretório de dados.
+3. Modifique o parâmetro `base_folder` na função `main()` para direcionar para o seu diretório de dados.
 
 4. Execute o script para treinar e avaliar o modelo:
 
@@ -55,6 +55,5 @@ Para um melhor desempenho, você pode considerar:
 2. **Arquiteturas mais profundas** ou modelos pré-treinados se você tiver um conjunto de dados maior
 3. **Agendamento da taxa de aprendizado** para melhorar a convergência
 4. **Validação cruzada** para uma avaliação mais robusta
-5. **Ajuste de hiperparâmetros** para otimizar o desempenho do modelo
+5. **Ajuste de hiperparâmetros** para optimizar o desempenho do modelo
 
-Informe-me se desejar alguma modificação no modelo ou se precisar de ajuda para integrá-lo ao seu código de pré-processamento existente.
